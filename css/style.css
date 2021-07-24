@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    background-color: #469FBC;
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.p_d {
+    padding-bottom: 20px;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.heading_main_h1 {color: white; font-size: 60px;}
+
+.number_of_letters {color: #ffc84c;}
+
+.Click_item_x {color: #76DC14;}
+
+.Click_item_complete {color: #285E70;}
+
+.form_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_main input{
+    height: 40px;
+    width: 700px;
+    border-radius: 7px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #7EB4F1;
+    outline: none;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.form_main button {
+    background-color: #275D6E;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #469FBC;
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_Child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    color: white;
+    background-color: #6AB7CA;
+    border: 3px solid #275D6E;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    transition: 1s;
+}
+
+.i_style{
+    color: #275D6E;
+    cursor: pointer;
+}
