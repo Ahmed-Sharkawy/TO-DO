@@ -1,6 +1,6 @@
 const input_text = document.getElementById("input_text"),
 
-    content = document.getElementById("content");
+    content = document.getElementById("content"),
 
     action = document.getElementById("action");
 
