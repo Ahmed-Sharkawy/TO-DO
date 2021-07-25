@@ -74,7 +74,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 70%;
     height: 40px;
     color: white;
     background-color: #6AB7CA;
@@ -88,4 +88,9 @@ body {
 .i_style{
     color: #275D6E;
     cursor: pointer;
+    font-size: 20px;
+    transition: .8s;
+}
+.i_style:hover{
+    color: #f7fbfc;
 }
