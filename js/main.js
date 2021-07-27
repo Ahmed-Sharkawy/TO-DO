@@ -14,15 +14,15 @@ function field_test(){
 
     // Create parent content
 
-    // let new_div = document.createElement("div"),
-    //     new_d = document.createAttribute("class");
-    //     new_d.value = "content_Child";
+    let new_div = document.createElement("div"),
+        new_d = document.createAttribute("class");
+        new_d.value = "content_Child";
 
     // Create icon content
 
-    // let new_i = document.createElement("i"),
-    //     new_i_class = document.createAttribute("class");
-    //     new_i_class.value = "fas fa-times i_style";
+    let new_i = document.createElement("i"),
+        new_i_class = document.createAttribute("class");
+        new_i_class.value = "fas fa-times i_style";
 
         new_I = document.createElement("i");
         new_I_class = document.createAttribute("class");
@@ -38,32 +38,30 @@ function field_test(){
             
         // Add the value of the input field
 
-        // new_div.setAttributeNode(new_d);
-        // content.appendChild(new_div).innerHTML = input_text.value ;
-
-        content.innerHTML = `<div class='content_Child'>${input_text.value}<i class="fas fa-times i_style" onclick="aa()"</i></div>`;
+        new_div.setAttributeNode(new_d);
+        content.appendChild(new_div).innerHTML = input_text.value ;
         document.getElementById("input_text").value = "";
 
         // Add the value of the input field
 
-        // new_i.setAttributeNode(new_i_class);
-        // new_div.appendChild(new_i);
+        new_i.setAttributeNode(new_i_class);
+        new_div.appendChild(new_i);
 
-        // new_I.setAttributeNode(new_I_class);
-        // new_div.appendChild(new_I);
-        // new_I.style.display = "none"
+        new_I.setAttributeNode(new_I_class);
+        new_div.appendChild(new_I);
+        new_I.style.display = "none"
 
         // Unwanted field removal function
         
-        // new_i.onclick = function () {
-        //     "use start";
-        //     this.parentElement.style.display = 'none'; 
-        // };
+        new_i.onclick = function () {
+            "use start";
+            this.parentElement.style.display = 'none'; 
+        };
 
-        // new_div.onclick = function () {
-        //     "use start";
-        //     new_I.style.display = "inline-block";
-        // };
-
+        new_div.onclick = function (e) {
+            "use start";
+            // new_I.style.display = "block";
+            e.target.childNodes[2].style.display = "block"
+        };
     };
 };
