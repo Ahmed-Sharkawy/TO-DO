@@ -61,7 +61,12 @@ function field_test(){
         new_div.onclick = function (e) {
             "use start";
             // new_I.style.display = "block";
-            e.target.childNodes[2].style.display = "block"
+            // e.target.childNodes[2].style.display = "block"
+            if (e.target.childNodes[2].style.display == "none"){
+                e.target.childNodes[2].style.display = "inline-block";
+            }else{
+                e.target.childNodes[2].style.display = "none";
+            }
         };
     };
 };
